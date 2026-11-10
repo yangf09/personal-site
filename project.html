@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>项目详情 · 阳帆</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 粒子背景 -->
+<canvas id="particles"></canvas>
+
+<!-- 自定义光标 -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- 导航 -->
+<nav class="nav" id="nav">
+  <a class="nav-logo" href="index.html#hero">FELICITY<span>.</span></a>
+  <a class="nav-contact" href="index.html#projects">← 返回项目</a>
+</nav>
+
+<!-- 详情内容 -->
+<main class="detail" id="detail"></main>
+
+<!-- 图片灯箱 -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox-overlay" data-lightbox-close></div>
+  <button class="lightbox-close" data-lightbox-close aria-label="关闭">&times;</button>
+  <button class="lightbox-nav prev" id="lbPrev" aria-label="上一张">‹</button>
+  <div class="lightbox-stage" id="lightboxStage"></div>
+  <button class="lightbox-nav next" id="lbNext" aria-label="下一张">›</button>
+</div>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="project.js"></script>
+
+</body>
+</html>
